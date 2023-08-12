@@ -1,11 +1,20 @@
 
 //we can manually pass argument 
+using asp.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // we write our dependency injection code after the builder initialization and before the build funtion
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+
+
+
+    builder.Configuration.GetConnectionString("connect")));
 
 var app = builder.Build();
 
