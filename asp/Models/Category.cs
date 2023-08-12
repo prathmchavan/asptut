@@ -12,6 +12,6 @@ namespace asp.Models
 
         public int DisplayOrder { get; set; }
 
-        public DateTime CreatedDate { get; set; }= DateTime.Now;
+        public DateTime createdDateTime { get; set; }= DateTime.Now;
     }
 }

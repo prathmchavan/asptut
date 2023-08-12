@@ -1,12 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using asp.Data;
+using asp.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.AccessControl;
 
-namespace asp.Controllers
+namespace asp.Controllers;
+
+public class CategoryController : Controller
 {
-    public class CategoryController : Controller
+    private readonly ApplicationDbContext _db;
+
+    public CategoryController(ApplicationDbContext db)
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        _db= db;
+    }
+    public IActionResult Index()
+    {
+        IEnumerable<Category> objCategoryList= _db.Categories;
+        return View(objCategoryList);
     }
 }
