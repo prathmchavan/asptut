@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\asp.bundle.scp.css"
     },
     {
+      "Id": "D:\\programs\\asptut\\asp\\wwwroot\\css\\Theme.css",
+      "PackagePath": "staticwebassets\\css\\Theme.css"
+    },
+    {
       "Id": "D:\\programs\\asptut\\asp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

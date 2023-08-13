@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Hq7frjrcCR0vF63M2dplSxYURuLSbmKMLN4Xg2f53l0=",
+  "Hash": "IJfEpNlIZuYp32KVmVnFVC7ZkPs5o6FxrblGQLxBpJk=",
   "Source": "asp",
   "BasePath": "_content/asp",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\programs\\asptut\\asp\\wwwroot\\css\\Theme.css",
+      "SourceId": "asp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\programs\\asptut\\asp\\wwwroot\\",
+      "BasePath": "_content/asp",
+      "RelativePath": "css/Theme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Theme.css"
     },
     {
       "Identity": "D:\\programs\\asptut\\asp\\wwwroot\\favicon.ico",

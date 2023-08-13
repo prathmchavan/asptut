@@ -3,10 +3,26 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+
+    <div class="container p-3">
+        <div class="row pt-4">
+            <div class="col-6">
+
+                <h2 class="text-primary">
+                    Category List
+                </h2>
+            </div>
+            <div class="col-6 text-end">
+            
+                <a asp-controller="Category" asp-action="Create" class="btn btn-primary ">
+                    Create New Category
+                </a>
+            </div>
+
+        </div>
+    </div> 
 
 <table class="table table-border table-striped" style="width:100%">
-
     <thead>
         
         <tr>
@@ -16,6 +32,13 @@
             <th>
                 Display Order
             </th>
+            <th>
+                Edit
+            </th>
+            <th>
+                Delete
+            </th>
+
         </tr>
     </thead>
 
@@ -28,6 +51,22 @@
             </td>
             <td width="30%">
                 @obj.DisplayOrder
+            </td>
+            <td>
+
+                    <div class="w-75 btn-group" role="group">
+
+                        <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-success mx-2">   Edit</a>
+                    </div>
+
+            </td>
+            <td>
+
+                    <div class=" btn-group" role="group">
+
+                        <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger mx-2 ">Delete</a>
+                    </div>
+
             </td>
         </tr>
         }
